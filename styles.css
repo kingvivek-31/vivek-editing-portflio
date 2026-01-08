@@ -350,6 +350,27 @@ a:hover {
     position: absolute;
 }
 
+.video-wrapper.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.placeholder-text {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    text-align: center;
+    font-style: italic;
+    padding: var(--space-2xl);
+    margin: 0;
+}
+
 .portfolio-info {
     padding: 0 var(--space-sm);
 }
