@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vivek - Video Editor specializing in short-form storytelling and talking-head content">
-    <title>Vivek - Video Editor & Storyteller</title>
+    <title>Vivek - Video Editor &amp; Storyteller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,19 +26,19 @@
     <!-- ===== HERO SECTION ===== -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-name">Vivek Gupta</h1>
-            
-            <!-- POSITIONING STATEMENTS (pick one, uncomment your favorite) -->
-            <!-- Option 1: Storytelling-focused -->
-            <!-- <p class="hero-tagline">I help creators turn ideas into clear, engaging short-form stories.</p> -->
-            
-            <!-- Option 2: Creator-focused -->
-            <!-- <p class="hero-tagline">Short-form video editing for creators who care about clarity and story.</p> -->
-            
+            <div class="availability reveal">
+                <span class="pulse-dot"></span>
+                Available for work
+            </div>
+
+            <h1 class="hero-name reveal">
+                Vivek <span class="accent-italic">Gupta</span>
+            </h1>
+
             <!-- Option 3: Calm & confident -->
-            <p class="hero-tagline">Video editing that puts your story first. Clear, purposeful, human.</p>
-            
-            <div class="hero-cta">
+            <p class="hero-tagline reveal">Video editing that puts your story first. Clear, purposeful, human.</p>
+
+            <div class="hero-cta reveal">
                 <a href="#work" class="btn btn-primary">View Work</a>
                 <a href="#contact" class="btn btn-secondary">Contact</a>
             </div>
@@ -45,43 +48,59 @@
     <!-- ===== WORK / PORTFOLIO SECTION ===== -->
     <section id="work" class="work">
         <div class="container">
-            <h2 class="section-title">Recent Work</h2>
-            
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Portfolio</span>
+                <h2 class="section-title">Recent Work</h2>
+            </div>
+
             <!-- SHORT-FORM COLLECTION -->
-            <div class="collection">
-                <h3 class="collection-title">Short-Form Edits (Reels & Shorts)</h3>
+            <div class="collection reveal">
+                <div class="collection-label">
+                    <h3 class="collection-title">Short-Form Edits (Reels &amp; Shorts)</h3>
+                </div>
                 <div class="shorts-grid">
                     <!-- SHORT-FORM ITEM 1 -->
                     <div class="portfolio-item short-form">
                         <div class="video-wrapper short-wrapper">
+                            <iframe
+                                src="https://www.youtube.com/embed/SkkYin8KYKk"
+                                title="Short-Form Edit"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="portfolio-info">
-                            <h4>Short-Form Sample 1</h4>
-                            <p class="video-type">Instagram Reels</p>
+                            <h4>Short-Form Edit</h4>
+                            <p class="video-type">YouTube Shorts</p>
                         </div>
                     </div>
 
                     <!-- SHORT-FORM ITEM 2 -->
                     <div class="portfolio-item short-form">
                         <div class="video-wrapper short-wrapper">
+                            <iframe
+                                src="https://www.youtube.com/embed/w7yXHhvZHGQ"
+                                title="Short-Form Edit 2"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="portfolio-info">
                             <h4>Short-Form Sample 2</h4>
-                            <p class="video-type">Instagram Reels</p>
+                            <p class="video-type">YouTube Shorts</p>
                         </div>
                     </div>
 
                     <!-- SHORT-FORM ITEM 3 -->
                     <div class="portfolio-item short-form">
                         <div class="video-wrapper short-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/EsWvzB4vmZ0" 
-                                width="100%" 
-                                height="100%" 
-                                style="position: absolute; top: 0; left: 0; border: none;"
+                            <iframe
+                                src="https://www.youtube.com/embed/EsWvzB4vmZ0"
                                 title="Promotional Edit - Wicked Guys"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>
                         </div>
@@ -94,14 +113,11 @@
                     <!-- SHORT-FORM ITEM 4 -->
                     <div class="portfolio-item short-form">
                         <div class="video-wrapper short-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/O1sWyhl2mzU" 
-                                width="100%" 
-                                height="100%" 
-                                style="position: absolute; top: 0; left: 0; border: none;"
+                            <iframe
+                                src="https://www.youtube.com/embed/O1sWyhl2mzU"
                                 title="Promotional Edit - College"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>
                         </div>
@@ -114,9 +130,11 @@
             </div>
 
             <!-- LONG-FORM COLLECTION -->
-            <div class="collection">
-                <h3 class="collection-title">Long-Form Content</h3>
-                <div class="longs-grid shorts-grid">
+            <div class="collection reveal">
+                <div class="collection-label">
+                    <h3 class="collection-title">Long-Form Content</h3>
+                </div>
+                <div class="longs-grid">
                     <!-- LONG-FORM ITEM 1 -->
                     <div class="portfolio-item long-form">
                         <div class="video-wrapper long-wrapper">
@@ -134,56 +152,59 @@
     </section>
 
     <!-- ===== SKILLS / FOCUS SECTION ===== -->
-    <section class="skills">
+    <section class="skills" id="about">
         <div class="container">
-            <h2 class="section-title">What I Focus On</h2>
-            
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Expertise</span>
+                <h2 class="section-title">What I Focus On</h2>
+            </div>
+
             <div class="skills-list">
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <h3>Short-form video editing (Reels / Shorts)</h3>
                     <p>Optimized for engagement and platform algorithms.</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Talking-head & personal brand content</h3>
+                <div class="skill-item reveal">
+                    <h3>Talking-head &amp; personal brand content</h3>
                     <p>Editing that makes you look confident and professional.</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Story-driven pacing & clean cuts</h3>
+                <div class="skill-item reveal">
+                    <h3>Story-driven pacing &amp; clean cuts</h3>
                     <p>Strategic cuts that serve the narrative without distracting.</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Hook & retention-focused editing</h3>
+                <div class="skill-item reveal">
+                    <h3>Hook &amp; retention-focused editing</h3>
                     <p>Strong opens that grab attention, pacing that keeps viewers engaged.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <h3>Readable subtitles with emphasis</h3>
                     <p>Captions designed for clarity and visual impact.</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Basic color correction & mood grading</h3>
+                <div class="skill-item reveal">
+                    <h3>Basic color correction &amp; mood grading</h3>
                     <p>Consistent look that matches your brand and content tone.</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Audio cleanup & music selection</h3>
+                <div class="skill-item reveal">
+                    <h3>Audio cleanup &amp; music selection</h3>
                     <p>Professional sound design that complements your message.</p>
                 </div>
-                <div class="skill-item">
-                    <h3>Simple motion graphics & visual callouts</h3>
+                <div class="skill-item reveal">
+                    <h3>Simple motion graphics &amp; visual callouts</h3>
                     <p>Subtle animations that emphasize key points without overwhelming.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <h3>B-roll integration for clarity</h3>
                     <p>Supporting footage that enhances understanding and visual interest.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <h3>Content structuring from raw footage</h3>
                     <p>Organizing and shaping loose footage into a cohesive story.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <h3>Feedback-driven, deadline-oriented workflow</h3>
                     <p>Collaborative process with quick iterations and reliable delivery.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <h3>Comfortable working with remote teams</h3>
                     <p>Seamless communication and file management across platforms.</p>
                 </div>
@@ -194,15 +215,18 @@
     <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
             <div class="contact-content">
-                <p>Have a project in mind? Let's talk.</p>
-                
-                <div class="contact-methods">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Let's Work Together</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                </div>
+
+                <p class="reveal">Have a project in mind? Let's talk.</p>
+
+                <div class="contact-methods reveal">
                     <a href="https://instagram.com/vivekkk_.31" target="_blank" class="contact-method">
                         <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37"></path>
                                 <circle cx="17.5" cy="6.5" r="1.5"></circle>
@@ -214,7 +238,7 @@
 
                     <a href="https://wa.me/919582915196" target="_blank" class="contact-method">
                         <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                             </svg>
                         </div>
@@ -224,7 +248,7 @@
 
                     <a href="https://www.linkedin.com/in/vivek-gupta-a65060328/" target="_blank" class="contact-method">
                         <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
@@ -236,7 +260,7 @@
 
                     <a href="mailto:kv31102005@gmail.com" class="contact-method">
                         <div class="contact-icon">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                             </svg>
@@ -252,9 +276,33 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Vivek. Video editor & storyteller.</p>
+            <p>&copy; 2026 Vivek. Video editor &amp; storyteller.</p>
         </div>
     </footer>
 
+    <!-- ===== SCROLL REVEAL ===== -->
+    <script>
+        (function () {
+            const els = document.querySelectorAll('.reveal');
+            if (!window.IntersectionObserver) {
+                els.forEach(el => el.classList.add('in-view'));
+                return;
+            }
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        // Stagger children in the same parent
+                        const siblings = [...entry.target.parentNode.querySelectorAll('.reveal:not(.in-view)')];
+                        const idx = siblings.indexOf(entry.target);
+                        setTimeout(() => {
+                            entry.target.classList.add('in-view');
+                        }, Math.min(idx * 60, 300));
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(el => obs.observe(el));
+        })();
+    </script>
 </body>
 </html>
